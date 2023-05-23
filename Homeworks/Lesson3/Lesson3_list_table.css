@@ -1,0 +1,32 @@
+ /*Task 2456*/
+ li {
+    padding-left: 10px;
+  }
+
+  /*Task 2459*/
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*Task 2497*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+  }
+
+  /*Task 2498*/
+  table {
+    width: 90%;
+    margin: auto;
+  }
+  td,
+  th {
+    padding: 0.5rem;
+    border: 1px solid #000;
+    text-align: center;
+  }
