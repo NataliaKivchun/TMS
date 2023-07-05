@@ -1,0 +1,132 @@
+.container {
+    min-height: 100vh;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    animation-name: square-way;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.square:hover{
+    animation-play-state: paused;
+}
+
+@keyframes square-way {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(1340px, 0);
+    }
+    50% {
+        transform: translate(1340px, 600px);
+        
+    }
+    75% {
+        transform: translate(0, 600px);
+        
+    }
+    100% {
+        transform: translate(0, 0);
+
+    }
+}
+
+.snake {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    padding-left: 230px;
+    padding-top: 90px;
+
+}
+
+.snake-part {
+    height: 30px;
+    width: 30px;
+    background-color: ghostwhite;
+    border-radius: 50%;
+    animation-name: snake-move;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+.snake-part:nth-child(1) {
+    animation-delay: 0s;
+    background-color: red;
+}
+
+.snake-part:nth-child(2) {
+    animation-delay: 0.1s;
+    background-color: orange;
+}
+
+.snake-part:nth-child(3) {
+    animation-delay: 0.2s;
+    background-color: yellow;
+}
+
+.snake-part:nth-child(4) {
+    animation-delay: 0.3s;
+    background-color: green;
+}
+
+.snake-part:nth-child(5) {
+    animation-delay: 0.4s;
+    background-color: aqua;
+}
+
+.snake-part:nth-child(6) {
+    animation-delay: 0.5s;
+    background-color: blue;
+}
+
+.snake-part:nth-child(7) {
+    animation-delay: 0.6s;
+    background-color: purple;
+}
+
+@keyframes snake-move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

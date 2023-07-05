@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        text-align: center;
+        width: fit-content;
+      }
+
+      .fieldset {
+        text-align: right;
+        border: none;
+
+      }
+      label {
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      input {
+        margin-left: 15px;
+        background-color: rgb(209, 196, 162);
+        border: 1px solid grey;
+        padding: 4px 10px;
+      }
+
+      .button {
+        background-color: rgb(171, 87, 27);
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 10px 20px;
+        border: 3px solid rgb(209, 196, 162);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <fieldset class="fieldset">
+          <label for="first-name"
+            >Имя
+            <input autofocus id="first-name" type="text" />
+          </label>
+          <label for="last-name"
+            >Фамилия
+            <input type="text" name="last-name" id="last-name" />
+          </label>
+          <label for="address"
+            >Адрес
+            <input id="address" type="text" />
+          </label>
+        </fieldset>
+
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </body>
+</html>

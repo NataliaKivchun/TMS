@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  height: 500px;
+  background-color: blueviolet;
+  margin: 0 auto;
+  color: white;
+
+  &__hello {
+    font-size: 45px;
+  }
+  &__btn {
+    border: none;
+    background-color: brown;
+    cursor: pointer;
+    &:hover {
+      background-color: cadetblue;
+    }
+  }
+}
